@@ -1,0 +1,46 @@
+Setup:
+========
+git config --global user.name "Your Name Here"
+git config --global user.email "your_email@example.com"
+
+
+Make local dir and move to that
+=========(not git command)
+mkdir ~/Hello-World
+#Creates a directory for your project called "Hello-World" in your user directory
+
+cd ~/Hello-World 
+#go to that folder 
+
+
+Make repo
+============
+#create file from ccommand line with TOUCH
+touch README.md
+
+#initiate git first time in local dir for git to work
+git init
+
+#add files for committing
+git add README.md
+
+#commit message
+git commit -m "first commit"
+
+#add remote origin for repo
+git remote add origin https://github.com/Ravian/dd.git
+
+#push changes to remote master
+git push -u origin master
+
+
+Workflow
+=======
+given you are in the local repo dir
+you have added remote origin repo
+then workflow is like:
+
+git status
+git add filename
+git commit -m "commit message"
+git push -u origin master
